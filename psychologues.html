@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON - Psychologues</title>
+    <link rel="stylesheet" href="page_daccueil.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="professionnels.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-space"><img src="Logo.png" alt="Logo Horizon" /></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Professionnels</a>
+                    <div class="dropdown-menu">
+                        <a href="psychiatres.html" class="dropdown-item">Psychiatres</a>
+                        <a href="psychologues.html" class="dropdown-item">Psychologues</a>
+                        <a href="psychothérapeutes.html" class="dropdown-item">Psychothérapeutes</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="associations.html" class="nav-link">Association</a></li>
+                <li class="nav-item"><a href="conseils.html" class="nav-link">Conseil</a></li>
+                <li class="nav-item"><a href="Autres_sites.html" class="nav-link">Autres sites</a></li>
+                <li class="nav-item"><a href="Qui_sommes_nous.html" class="nav-link">Qui sommes-nous ?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pro-container">
+
+        <div class="pro-header">
+            <h1 class="pro-title">Psychologues</h1>
+            <p class="pro-definition">Un psychologue est un professionnel qui aide les personnes à comprendre leurs émotions, leurs comportements et leurs difficultés. Il écoute, accompagne et propose des outils pour aller mieux, mais ne prescrit pas de médicaments.</p>
+        </div>
+
+        <div class="accordion-list">
+
+            <!-- CARPENTRAS -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Carpentras <span class="ville-count">2 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Romuald Garcia</h3>
+							<p><strong> Diplôme :</strong> Master 2 de psychologie clinique.</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicien, psychothérapeute, psychanalyste.</p>
+							<p><strong> Approche :</strong> Psychanalyse, psychothérapie relationnelle et existentielle, thérapie de couple et familiale, Gestalt-thérapie, analyse transactionnelle, psychodrame, autres approches relationnelles intégratives.</p>
+                            <p class="pro-adresse">149 chem Campaneri</p>
+                            <p class="pro-tel"><a href="tel:0615461822">06 15 46 18 22</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Laure Savary</h3>
+							<p><strong> Diplôme :</strong> Master 2 de psychologie (Aix-Marseille), Diplôme universitaire de psychotrauma.</p>
+							<p><strong> Spécialisation :</strong> Psychotraumatologie, prise en charge des traumatismes psychiques, stress post-traumatique.</p>
+							<p><strong> Approche :</strong> Psychothérapies centrées trauma pour enfants, adolescents et adultes, travail sur les symptômes post-traumatiques (anxiété, flashbacks, cauchemars, etc.).</p>
+                            <p class="pro-adresse">154 Avenue Bel Air</p>
+                            <p class="pro-tel"><a href="tel:0671685115">06 71 68 51 15</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ORANGE -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Orange <span class="ville-count">4 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Ségolène Chevalier</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie clinique et psychopathologie (Univ. Paul Valéry Montpellier).</p>
+							<p><strong> Spécialisation :</strong>Psychologue clinicienne, périnatalité, accompagnement enfant, adolescent, adulte. </p>
+							<p><strong> Approche :</strong>Psychothérapie individuelle, accompagnement périnatal (grossesse, post-partum), suivi enfant/ado/adulte, approche intégrative centrée sur la relation. </p>
+                            <p class="pro-adresse">237 Impasse des Anémones</p>
+                            <p class="pro-tel"><a href="tel:0616283621">06 16 28 36 21</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Lise Bousquet</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie clinique et psychopathologie, formation en TCC/TCCE.</p>
+							<p><strong> Spécialisation :</strong>Psychologue clinicienne, psychothérapeute TCCE (thérapies comportementales, cognitives et émotionnelles). </p>
+							<p><strong> Approche :</strong>Thérapies comportementales, cognitives et émotionnelles : travail sur les pensées, émotions, comportements, prise en charge enfants/ados/adultes (anxiété, dépression, etc.). </p>
+                            <p class="pro-adresse">364 Avenue Charles de Gaulle</p>
+                            <p class="pro-tel"><a href="tel:0686919415">06 86 91 94 15</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Anne-Sophie De Coster</h3>
+							<p><strong> Diplôme :</strong> Master en psychologie (Université de Provence).</p>
+							<p><strong> Spécialisation :</strong>Psychologue, psychothérapeute, hypnothérapeute, cabinet « Psy 2.0 ». </p>
+							<p><strong> Approche :</strong>Psychothérapie individuelle, hypnose thérapeutique, accompagnement enfants, adolescents, adultes et couples (approche intégrative centrée sur la relation). </p>
+                            <p class="pro-adresse">Villa Ulysse, 699 Avenue Verdun</p>
+                            <p class="pro-tel"><a href="tel:0652065614">06 52 06 56 14</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Elisa Tourn</h3>
+							<p><strong> Diplôme :</strong> Formation de psychologue du travail.</p>
+							<p><strong> Spécialisation :</strong> Psychologue du travail, accompagnement en entreprise, évolution professionnelle, risques psychosociaux.</p>
+							<p><strong> Approche :</strong> Bilan et accompagnement en évolution professionnelle, prévention des risques psychosociaux, amélioration de la qualité de vie au travail, conseil aux salariés et structures. </p>
+                            <p class="pro-adresse">853 boulevard Edouard Daladier</p>
+                            <p class="pro-tel"><a href="tel:0744425106">07 44 42 51 06</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- L'ISLE-SUR-LA-SORGUE -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> L'Isle-sur-la-Sorgue <span class="ville-count">2 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Peter Lemesic</h3>
+                            <p><strong> Diplôme :</strong> Master de psychologie.</p>
+							<p><strong> Spécialisation :</strong> Psychologue à L’Isle-sur-la-Sorgue, consultations enfants, adolescents et adultes.</p>
+							<p><strong> Approche :</strong> Entretiens psychologiques individuels, psychothérapie de soutien et d’accompagnement.</p>
+                            <p class="pro-adresse">3 Rue Raspail</p>
+                            <p class="pro-tel"><a href="tel:0665568235">06 65 56 82 35</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Bénédicte Marini</h3>
+							<p><strong> Diplôme :</strong> Formation universitaire en psychologie.</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne à L’Isle-sur-la-Sorgue.</p>
+							<p><strong> Approche :</strong> Psychothérapies individuelles, accompagnement psychologique.</p>
+                            <p class="pro-adresse">3 Rue Raspail</p>
+                            <p class="pro-tel"><a href="tel:0607445918">06 07 44 59 18</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LES ANGLES -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Les Angles <span class="ville-count">2 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Aymeric Biard</h3>
+                            <p><strong> Diplôme :</strong> Master de psychologie.</p>
+							<p><strong> Spécialisation :</strong> consultations enfants, ados, adultes, orientation clinique générale. </p>
+							<p><strong> Approche :</strong> Psychothérapie de soutien et d’accompagnement, TCC, psychologue clinicien généraliste. </p>
+                            <p class="pro-adresse">2 Chemin du Chêne</p>
+                            <p class="pro-tel"><a href="tel:0759676328">07 59 67 63 28</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Laurent Giraud</h3>
+                            <p><strong> Diplôme :</strong> Master de psychologie clinique.</p>
+							<p><strong> Spécialisation :</strong>psychologue clinicien, psychothérapeute (TCC, EMDR). </p>
+							<p><strong> Approche :</strong>Thérapies cognitivo‑comportementales (TCC), EMDR, psychothérapie individuelle. </p>
+                            <p class="pro-adresse">Les Angles</p>
+                            <p class="pro-tel"><a href="tel:0682552204">06 82 55 22 04</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MONTEUX -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Monteux <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Sandrine Palombo</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie clinique</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne, sexologue.</p>
+							<p><strong> Approche :</strong>Psychothérapie individuelle, accompagnement clinique. </p>
+                            <p class="pro-adresse">15 bd Trewey</p>
+                            <p class="pro-tel"><a href="tel:0614867697">06 14 86 76 97</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LORIOL-DU-COMTAT -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Loriol-du-Comtat <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Jean-Philippe Roussac</h3>
+							<p><strong> Diplôme :</strong> Master 2 de psychologie (psychologie sociale et des organisations, Université Paris 8).</p>
+							<p><strong> Spécialisation :</strong> Psychologue, psychothérapeute, spécialisé en psychologie sociale, coaching et accompagnement du changement </p>
+							<p><strong> Approche :</strong>Psychothérapie de soutien, coaching individuel et de groupe, travail sur estime de soi, maîtrise de soi, charisme, accompagnement en entreprise, associations et institutions. </p>
+                            <p class="pro-adresse">341 Chemin de Barriot</p>
+                            <p class="pro-tel"><a href="tel:0687066298">06 87 06 62 98</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AUTRES COMMUNES -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Autres communes <span class="ville-count">10 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Emmanuelle Auzias</h3>
+							<p><strong> Diplôme :</strong> Master en psychologie sociale, du travail et des organisations – Université de Provence.</p>
+							<p><strong> Spécialisation :</strong> Psychologue à Saint‑Didier (Vaucluse), orientation clinique et art‑thérapie. </p>
+							<p><strong> Approche :</strong> Psychothérapie analytique, art‑thérapie individuelle ou familiale, approches multiculturelles, accompagnement en profondeur sur les émotions et l’histoire de vie.</p>
+                            <p class="pro-specialite">Saint-Didier</p>
+                            <p class="pro-adresse">775 Rte de la Sérignane</p>
+                            <p class="pro-tel"><a href="tel:0765827493">07 65 82 74 93</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Carine Giorgetti</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie (psychologue clinicienne).</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne, psychothérapeute, spécialisée en TCC/TCCE. </p>
+							<p><strong> Approche :</strong> Thérapies cognitivo‑comportementales et émotionnelles (TCC/TCCE), thérapie des schémas, thérapies d’acceptation et d’engagement (ACT), prise en charge anxiété, dépression, troubles émotionnels. </p>
+                            <p class="pro-specialite">Monteaux · TCC</p>
+                            <p class="pro-adresse">66 Allée des Santolines</p>
+                            <p class="pro-tel"><a href="tel:0627624922">06 27 62 49 22</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Elodie Martinez</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie (psychologue clinicienne).</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne, psychothérapeute. </p>
+							<p><strong> Approche :</strong> Psychothérapie individuelle enfants/ados/adultes, prise en charge des addictions, dépendance affective, troubles anxieux et dépressifs, accompagnement émotionnel (approche intégrative centrée sur la relation).</p>
+                            <p class="pro-adresse">89 Rue du Portail Neuf</p>
+                            <p class="pro-tel"><a href="tel:0755550941">07 55 55 09 41</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Augustin Foucard</h3>
+							<p><strong> Diplôme :</strong> Master de psychopathologie clinique et psychanalyse – Université de Marseille</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicien. </p>
+							<p><strong> Approche :</strong> Approche psychanalytique et clinique, psychothérapie individuelle, prise en charge de la dépression, troubles anxieux et difficultés existentielles (orientation psychodynamique). </p>
+                            <p class="pro-specialite">Le Pontet · Psy généraliste</p>
+                            <p class="pro-adresse">5e étage, 18 av Gustave Goutarel</p>
+                            <p class="pro-tel"><a href="tel:0626458451">06 26 45 84 51</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Catherine Prat</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie (psychologue clinicienne, titre de psychologue).</p>
+							<p><strong> Spécialisation :</strong> Psychologue. </p>
+							<p><strong> Approche :</strong> Psychothérapie de soutien et accompagnement individuel (adulte/ado).</p>
+                            <p class="pro-specialite">Molières-lès-Avignon · TCC</p>
+                            <p class="pro-adresse">364 Avenue Jean Monnet</p>
+                            <p class="pro-tel"><a href="tel:0695029191">06 95 02 91 91</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Marina Becquart</h3>
+							<p><strong> Diplôme :</strong> Psychologue clinicienne</p>
+							<p><strong> Approche :</strong>TCC, analytique. </p>
+                            <p class="pro-specialite">Sorgues</p>
+                            <p class="pro-adresse">111 rue Eau Vive</p>
+                            <p class="pro-tel"><a href="tel:0609780222">06 09 78 02 22</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Laurence Bernard Petit</h3>
+							<p><strong> Diplôme :</strong> Master de psychologie des transitions : Orientation, Insertion, Conseil (OIC) – Université d’Aix‑Marseille, D.U. Thérapie comportementale et cognitive (Université Nice Côte d’Azur),  D.U. Addictologie générale (Université Paris‑Saclay). </p>
+							<p><strong> Spécialisation :</strong>Psychologue et psychothérapeute, spécialisée en TCC/TCCE, thérapie des schémas, EMDR, troubles anxieux, dépressifs et addictions </p>
+							<p><strong> Approche :</strong> Approche intégrative et humaniste : thérapies comportementales, cognitives et émotionnelles (TCC/TCCE), thérapie des schémas, EMDR (praticienne IFEMDR), prise en charge de l’anxiété, dépression, addictions, phobies, TOC, troubles du comportement alimentaire et traumas. </p>
+                            <p class="pro-specialite">Pertuis</p>
+                            <p class="pro-adresse">413 Cours République</p>
+                            <p class="pro-tel"><a href="tel:0603137084">06 03 13 70 84</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Maria Giovanna Denti</h3>
+							<p><strong> Diplôme :</strong> Master « Sciences humaines et sociales », mention psychologie, spécialité psychologie clinique et psychopathologie, Université Paris 8 Vincennes–Saint‑Denis.</p>
+							<p><strong> Spécialisation :</strong>Psychologue clinicienne, psychothérapeute, spécialisée dans le trauma, les troubles anxieux et les problématiques existentielles </p>
+							<p><strong> Approche :</strong>EMDR (niveaux 1 et 2), intégration neuro‑émotionnelle des traumatismes, hypnose humaniste et ericksonienne, thérapie symbolique avancée, accompagnement psychocorporel et coaching. </p>
+                            <p class="pro-specialite">Viens</p>
+                            <p class="pro-adresse">Quartier St Amas</p>
+                            <p class="pro-tel"><a href="tel:0695277510">06 95 27 75 10</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Marion Pitermann</h3>
+							<p><strong> Diplôme :</strong> Master 2 de psychologie clinique</p>
+							<p><strong> Spécialisation :</strong>Psychologue clinicienne, thérapeute familiale, superviseuse et formatrice en relation d’aide </p>
+							<p><strong> Approche :</strong>Psychothérapies individuelles, thérapie familiale, accompagnement de couples et familles, supervision de professionnels et formation (approche intégrative centrée sur la relation et la dynamique familiale). </p>
+                            <p class="pro-specialite">Cabrières-d'Aigues</p>
+                            <p class="pro-adresse">632 D chemin Gres</p>
+                            <p class="pro-tel"><a href="tel:0672948496">06 72 94 84 96</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Pierre Bachere</h3>
+							<p><strong> Diplôme :</strong> master de psychologie</p>
+							<p><strong> Spécialisation :</strong>Psychologue / psychothérapeute</p>
+							<p><strong> Approche :</strong>Psychothérapie individuelle. </p>
+                            <p class="pro-specialite">Bollène</p>
+                            <p class="pro-adresse">276 Avenue Antoine de Pons</p>
+                            <p class="pro-tel"><a href="tel:0603807638">06 03 80 76 38</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- fin accordion-list -->
+    </main>
+
+    <footer class="site-footer">
+        <p>HORIZON - ADIMAKER 2026 - Junia</p>
+		<div style="margin-top: 20px; text-align: center;">
+			<a href="mentions-legales.html" target="_blank" style="margin: 0 15px;">Mentions légales</a>
+			<a href="confidentialite.html" target="_blank" style="margin: 0 15px;">Politique de confidentialité</a>
+			<a href="sources.html" target="_blank" style="margin: 0 15px;">Sources</a>
+		</div>
+    </footer>
+
+    <script src="java.js"></script>
+    <script>
+        function toggleAccordion(trigger) {
+            const panel = trigger.nextElementSibling;
+            const isOpen = trigger.classList.contains('open');
+            document.querySelectorAll('.accordion-trigger.open').forEach(t => {
+                t.classList.remove('open');
+                t.nextElementSibling.classList.remove('open');
+            });
+            if (!isOpen) {
+                trigger.classList.add('open');
+                panel.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>

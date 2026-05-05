@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON </title>
+    
+    <link rel="stylesheet" href="page_daccueil.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+
+    <style>
+        /* Fixer la section hero à une hauteur fixe */
+        .hero {
+            height: 380px !important;
+            overflow: hidden !important;
+			margin-top: 30px
+        }
+
+        /* Conteneur en flex avec largeur fixe centrée, sans étirement */
+        .images-container {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 32px !important;
+            width: 100% !important;
+            height: 100% !important;
+            padding: 20px !important;
+        }
+
+        /* Chaque image a une taille fixe, ne se redimensionne pas */
+        .image-card {
+            width: 220px !important;
+            min-width: 220px !important;
+            max-width: 220px !important;
+            height: 300px !important;
+            min-height: 300px !important;
+            max-height: 300px !important;
+            flex-shrink: 0 !important;
+            flex-grow: 0 !important;
+        }
+    </style>
+</head>
+<body>
+<!-- HEADER & NAVIGATION -->
+<header>
+    <nav class="navbar">
+        <div class="logo-space">
+            <img src="Logo.png" alt="Logo Horizon" />
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <ul class="nav-menu" id="navMenu">
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Accueil</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Professionnels</a>
+                <div class="dropdown-menu">
+                    <a href="psychiatres.html" class="dropdown-item">Psychiatres</a>
+                    <a href="psychologues.html" class="dropdown-item">Psychologues</a>
+                    <a href="psychothérapeutes.html" class="dropdown-item">Psychothérapeutes</a>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                <a href="associations.html" class="nav-link">Association</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="conseils.html" class="nav-link">Conseil</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="Autres_sites.html" class="nav-link">Autres sites</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="Qui_sommes_nous.html" class="nav-link">Qui sommes-nous ?</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- GROS TITRE HORIZON CENTRÉ -->
+    <section class="title-section">
+        <h1 class="main-title">HORIZON</h1>
+    </section>
+	
+	<div style="text-align: center; margin: 5px 0; font-style: italic; font-size: 18px;">
+    "Vous n'êtes pas seul. Il existe des solutions et des personnes pour vous accompagner."
+	</div>
+	<div style="text-align: center; margin: 5 px 0; font-style: italic; font-size: 18px;">
+	Plateforme dédiée aux ressources disponibles dans le Vaucluse pour accompagner et soutenir les militaires en situation de détresse psychologique.
+	</div>
+
+    <!-- HERO SECTION WITH 4 IMAGES -->
+    <section class="hero">
+        <div class="images-container">
+            <div class="image-card" style="background-image: url('avignon.jpg');"></div>
+            <div class="image-card" style="background-image: url('im2.jpg');"></div>
+            <div class="image-card" style="background-image: url('Logo_2REG.png');"></div>
+            <div class="image-card" style="background-image: url('vaucluse.jpg');"></div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+	 <!-- Section 2: Comment est fait notre site ? -->
+		<section id="services">
+            <h2 id="servicesTitle">Que peut-on retrouver sur notre site ?</h2>
+            <p id="servicesText">
+                <li style="font-size: 18px;">Les professionnels de santé du Vaucluse qui sont prêts à vous prendre en charge.</li>
+                <li style="font-size: 18px;">Les dispositifs nationaux les plus pertinents pour vous accompagner et vous fournir des informations de qualité.</li>
+                <li style="font-size: 18px;">Des ressources fiables pour vous accompagner au mieux.</li>
+				<li style="font-size: 18px;">Si vous êtes militaire dans le vaucluse ce site vous permet de trouver les professionnels de santé mentale qui peuvent vous aider, les association présente dans le vaucluse et plein d'autre ressources.</li>
+				
+            </p>
+        </section>
+        <!-- Section 3: Les différents symptômes -->
+        <section id="about">
+            <h2 id="aboutTitle"> Les différents symptômes</h2>
+            <p id="aboutText">
+                Ici vous pouvez retrouver les différents symptômes retrouvables aussi sur le site internet du CIG :
+            </p>
+			<p id="aboutText">
+                Si vous vous sentez en mal-être, parlez-en : plus vous êtes accompagné, plus il est possible d’aller mieux rapidement.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3 id="feature1Title">Changements d’humeur inhabituels</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature2Title">Isolement social</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature3Title">Difficultés de mémoire et de concentration</h3>
+                </div>
+                                <div class="feature-card">
+                    <h3 id="feature1Title">Troubles du sommeil</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature2Title">Modifications de l’appétit</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature3Title">Pensées négatives persistantes</h3>
+                </div>
+                                <div class="feature-card">
+                    <h3 id="feature3Title">Perte d’intérêt pour les activités plaisantes</h3>
+                </div>
+                                <div class="feature-card">
+                    <h3 id="feature1Title">Fatigue inexpliquée</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature2Title">Augmentation des consommations</h3>
+                </div>
+                <div class="feature-card">
+                    <h3 id="feature3Title">Pensées suicidaires</h3>
+                </div>
+            </div>
+
+                             <div class="info-block">
+            <div class="info-card">
+                <div class="info-content">
+                    <p>
+                        Pour plus d'informations détaillées voici le site du CIG (Centre Interdépartemental de Gestion) de la Grande Couronne :
+                    </p>
+                                     <a href="https://www.cigversailles.fr/actualites/sante-mentale-10-signaux-dalerte-reconnaitre-pour-soi-et-pour-les-autres" target="_blank" rel="noopener noreferrer" class="CIG">
+                        Consulter le CIG
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>HORIZON - ADIMAKER 2026 - Junia</p>
+		<div style="margin-top: 20px; text-align: center;">
+			<a href="mentions-legales.html" target="_blank" style="margin: 0 15px;">Mentions légales</a>
+			<a href="confidentialite.html" target="_blank" style="margin: 0 15px;">Politique de confidentialité</a>
+			<a href="sources.html" target="_blank" style="margin: 0 15px;">Sources</a>
+		</div>
+    </footer>
+
+    <script src="java.js"></script>
+        <style>
+        .info-block {
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .info-card {
+            background: var(--card-bg, #f8f9fa);
+            border-left: 4px solid var(--accent, #2E75B6);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        .info-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        .info-content h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.3rem;
+            color: var(--text-primary, #1a1a2e);
+        }
+        .info-content p {
+            margin: 0 0 1rem 0;
+            line-height: 1.6;
+            color: var(--text-secondary, #444);
+        }
+        .CIG {
+            display: inline-block;
+            background: var(--accent, #2E75B6);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: opacity 0.2s;
+        }
+        .btn-ameli:hover {
+            opacity: 0.85;
+        }
+        .info-note {
+            font-size: 0.9rem;
+            color: var(--text-muted, #666) !important;
+            font-style: italic;
+        }
+    </style>
+</body>
+</html>

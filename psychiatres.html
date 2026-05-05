@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON - Psychiatres</title>
+    <link rel="stylesheet" href="page_daccueil.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="professionnels.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-space"><img src="Logo.png" alt="Logo Horizon" /></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Professionnels</a>
+                    <div class="dropdown-menu">
+                        <a href="psychiatres.html" class="dropdown-item">Psychiatres</a>
+                        <a href="psychologues.html" class="dropdown-item">Psychologues</a>
+                        <a href="psychothérapeutes.html" class="dropdown-item">Psychothérapeutes</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="associations.html" class="nav-link">Association</a></li>
+                <li class="nav-item"><a href="conseils.html" class="nav-link">Conseil</a></li>
+                <li class="nav-item"><a href="Autres_sites.html" class="nav-link">Autres sites</a></li>
+                <li class="nav-item"><a href="Qui_sommes_nous.html" class="nav-link">Qui sommes-nous ?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pro-container">
+
+        <div class="pro-header">
+            <h1 class="pro-title">Psychiatres</h1>
+            <p class="pro-definition">Un psychiatre est un médecin spécialisé en santé mentale. Il peut établir des diagnostics, prescrire des médicaments et proposer des thérapies. Il prend en charge les troubles psychiatriques tels que la dépression, les troubles anxieux, les psychoses ou le stress post-traumatique.</p>
+        </div>
+
+        <div class="accordion-list">
+
+            <!-- AVIGNON -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Avignon <span class="ville-count">2 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Patrick Jonatta</h3>
+							<p><strong> Diplôme :</strong> doctorat en médecine, DES de psychiatrie.</p>
+							<p><strong> Spécialisation :</strong> psychiatrie générale adulte en cabinet libéral.</p>
+							<p><strong> Approche :</strong> suivie psychiatrique classique, entretiens de soutien, prescription et ajustement de traitement médicamenteux</p>
+                            <p class="pro-adresse">23 rue République</p>
+                            <p class="pro-tel"><a href="tel:0490826277">04 90 82 62 77</a></p>
+							
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Tomescu Alexandra</h3>
+							<p><strong> Diplôme :</strong> doctorat d'état en médecine (Roumanie), certificat de medecin spécialiste psychiatre</p>
+							<p><strong> Spécialisation :</strong> psychiatrie, psychotraumatologie, troubles dissociatifs, troubles de la personnalité.</p>
+							<p><strong> Approche :</strong> EMDR (niveaux 1 et 2), psychothérapie sensorimotrice, thérapie orientées trauma et dissociation formation en psychologie analytique (Jung).</p>
+                            <p class="pro-adresse">1139 chemin Lavarin</p>
+                            <p class="pro-tel"><a href="tel:0787251452">07 87 25 14 52</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AUBIGNAN -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Aubignan <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Richard Brunner Haour</h3>
+							<p><strong> Diplôme :</strong> doctorat en médecine, DES de psychiatrie.</p>
+							<p><strong> Spécialisation :</strong> psychiatrie générale de l'adulte.</p>
+							<p><strong> Approche :</strong> consultation psychiatriques individuelles, prescription de traitement, entretien de soutien et de suivi.</p>
+                            <p class="pro-adresse">2118 Chemin St Just</p>
+                            <p class="pro-tel"><a href="tel:0630670374">06 30 67 03 74</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- fin accordion-list -->
+
+        <!-- LIEN AMELI -->
+        <div class="info-block">
+            <div class="info-card">
+                <div class="info-content">
+                    <h2>Trouver d'autres psychiatres près de chez vous</h2>
+                    <p>
+                        Pour trouver d'autres psychiatres conventionnés dans votre secteur, consultez l'annuaire officiel de l'Assurance Maladie :
+                    </p>
+                    <a href="https://annuairesante.ameli.fr/" target="_blank" rel="noopener noreferrer" class="btn-ameli">
+                        Consulter l'annuaire ameli.fr →
+                    </a>
+                    <p class="info-note">Filtrez par spécialité « Psychiatrie » et par code postal pour obtenir les coordonnées des praticiens disponibles dans votre secteur.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>HORIZON - ADIMAKER 2026 - Junia</p>
+		<div style="margin-top: 20px; text-align: center;">
+			<a href="mentions-legales.html" target="_blank" style="margin: 0 15px;">Mentions légales</a>
+			<a href="confidentialite.html" target="_blank" style="margin: 0 15px;">Politique de confidentialité</a>
+			<a href="sources.html" target="_blank" style="margin: 0 15px;">Sources</a>
+		</div>
+    </footer>
+
+    <script src="java.js"></script>
+    <script>
+        function toggleAccordion(trigger) {
+            const panel = trigger.nextElementSibling;
+            const isOpen = trigger.classList.contains('open');
+            document.querySelectorAll('.accordion-trigger.open').forEach(t => {
+                t.classList.remove('open');
+                t.nextElementSibling.classList.remove('open');
+            });
+            if (!isOpen) {
+                trigger.classList.add('open');
+                panel.classList.add('open');
+            }
+        }
+    </script>
+
+    <style>
+        .info-block {
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .info-card {
+            background: var(--card-bg, #f8f9fa);
+            border-left: 4px solid var(--accent, #2E75B6);
+            border-radius: 8px;
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        .info-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+        .info-content h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.3rem;
+            color: var(--text-primary, #1a1a2e);
+        }
+        .info-content p {
+            margin: 0 0 1rem 0;
+            line-height: 1.6;
+            color: var(--text-secondary, #444);
+        }
+        .btn-ameli {
+            display: inline-block;
+            background: var(--accent, #2E75B6);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: opacity 0.2s;
+        }
+        .btn-ameli:hover {
+            opacity: 0.85;
+        }
+        .info-note {
+            font-size: 0.9rem;
+            color: var(--text-muted, #666) !important;
+            font-style: italic;
+        }
+    </style>
+</body>
+</html>

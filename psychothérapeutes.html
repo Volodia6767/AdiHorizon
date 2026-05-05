@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZON - Psychothérapeutes</title>
+    <link rel="stylesheet" href="page_daccueil.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="professionnels.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-space"><img src="Logo.png" alt="Logo Horizon" /></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Professionnels</a>
+                    <div class="dropdown-menu">
+                        <a href="psychiatres.html" class="dropdown-item">Psychiatres</a>
+                        <a href="psychologues.html" class="dropdown-item">Psychologues</a>
+                        <a href="psychothérapeutes.html" class="dropdown-item">Psychothérapeutes</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="associations.html" class="nav-link">Association</a></li>
+                <li class="nav-item"><a href="conseils.html" class="nav-link">Conseil</a></li>
+                <li class="nav-item"><a href="Autres_sites.html" class="nav-link">Autres sites</a></li>
+                <li class="nav-item"><a href="Qui_sommes_nous.html" class="nav-link">Qui sommes-nous ?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pro-container">
+
+        <div class="pro-header">
+            <h1 class="pro-title">Psychothérapeutes</h1>
+            <p class="pro-definition">Un psychothérapeute est un professionnel formé à la pratique de la psychothérapie. Il accompagne les personnes en souffrance psychique à travers des entretiens et des techniques thérapeutiques variées. Il ne prescrit pas de médicaments.</p>
+        </div>
+
+        <div class="accordion-list">
+
+            <!-- AVIGNON -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Avignon <span class="ville-count">3 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Michel Akrich</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie</p>
+							<p><strong> Spécialisation :</strong> Psychopraticien / psychothérapeute</p>
+							<p><strong> Approche :</strong> Psychothérapie individuelle, accompagnement des transitions de vie, de l’épreuve, travail sur l’anxiété, le stress, la dépression, approche intégrative centrée sur la relation et l’histoire de vie.</p>
+                            <p class="pro-adresse">69 avenue Pierre Sémard</p>
+                            <p class="pro-tel"><a href="tel:0665646049">06 65 64 60 49</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Gérard JeanJacques</h3>
+							<p><strong> Spécialisation :</strong> psychothérapeute.</p>
+							<p><strong> Approche :</strong> Psychothérapie et accompagnement psychique, soutien dans les difficultés émotionnelles et relationnelles, approche clinique généraliste. </p>
+                            <p class="pro-adresse">30 rue Velouterie</p>
+                            <p class="pro-tel"><a href="tel:0619638271">06 19 63 82 71</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Siino Valérie</h3>
+							<p><strong> Spécialisation :</strong> Psychothérapeute / praticienne en psychothérapie.</p>
+							<p><strong> Approche :</strong> Psychothérapie de soutien, accompagnement émotionnel, développement personnel.</p>
+                            <p class="pro-adresse">La Cardinale, 1 rue Frères Brian</p>
+                            <p class="pro-tel"><a href="tel:0605177208">06 05 17 72 08</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARPENTRAS -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Carpentras <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Pascale Canépa</h3>
+							<p><strong> Spécialisation :</strong> Psychothérapeute</p>
+							<p><strong> Approche :</strong> Psychothérapies de soutien, travail sur difficultés personnelles et relationnelles.</p>
+                            <p class="pro-adresse">110 bd Graville</p>
+                            <p class="pro-tel"><a href="tel:0782316087">07 82 31 60 87</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAVAILLON -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Cavaillon <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Audrey Casagrande</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie</p>
+							<p><strong> Spécialisation :</strong> Psychologue – psychothérapeute</p>
+							<p><strong> Approche :</strong> Psychothérapie intégrative : TCC/ACT, EMDR, ICV (Intégration du Cycle de la Vie), ateliers d’expression créatrice et clown‑thérapie, prise en charge du stress, burn‑out, anxiété, confiance en soi.</p>
+                            <p class="pro-adresse">123 rue Lamartine</p>
+                            <p class="pro-tel"><a href="tel:0676197074">06 76 19 70 74</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- L'ISLE-SUR-LA-SORGUE -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> L'Isle-sur-la-Sorgue <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Bénédicte Marini</h3>
+                            <p><strong> Diplôme :</strong> Master de psychologie</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne</p>
+							<p><strong> Approche :</strong> Psychothérapies individuelles, accompagnement psychologique (approches non détaillées : pratique clinique généraliste centrée sur l’écoute et le soutien).</p>
+                            <p class="pro-adresse">3 Rue Raspail</p>
+                            <p class="pro-tel"><a href="tel:0607445918">06 07 44 59 18</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CABRIÈRES-D'AIGUES -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Cabrières-d'Aigues <span class="ville-count">1 professionnel</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Marion Pitermann</h3>
+                            <p><strong> Diplôme :</strong>Master 2 de psychologie clinique</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne, thérapeute familiale, superviseuse et formatrice.</p>
+							<p><strong> Approche :</strong> Psychothérapies individuelles, thérapie familiale et de couple, accompagnement des familles, supervision de professionnels, approche intégrative centrée sur la relation et les dynamiques familiales.</p>
+                            <p class="pro-adresse">632 D chemin Gres</p>
+                            <p class="pro-tel"><a href="tel:0672948496">06 72 94 84 96</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AUTRES COMMUNES -->
+            <div class="accordion-item">
+                <button class="accordion-trigger" onclick="toggleAccordion(this)">
+                    <span class="ville-nom"> Autres communes <span class="ville-count">6 professionnels</span></span>
+                    <span class="accordion-arrow">▼</span>
+                </button>
+                <div class="accordion-panel">
+                    <div class="pros-grid" style="grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));">
+                        <div class="pro-card highlighted">
+                            <h3>Alena Cluzeau</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie</p>
+							<p><strong> Spécialisation :</strong> Psychologue, psychothérapeute</p>
+							<p><strong> Approche :</strong> Psychothérapie individuelle, soutien aux enfants et aux parents, accompagnement de la parentalité, approche intégrative orientée développement de l’enfant et lien parent‑enfant.</p>
+                            <p class="pro-specialite">Lamotte-du-Rhône</p>
+                            <p class="pro-adresse">118 quartier Petite Motte</p>
+                            <p class="pro-tel"><a href="tel:0778373938">07 78 37 39 38</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Nathalie Michon</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie</p>
+							<p><strong> Spécialisation :</strong> Psychologue clinicienne et psychanalyste.</p>
+							<p><strong> Approche :</strong> Approche psychanalytique et clinique : entretiens de parole au long cours, travail sur l’inconscient, les conflits internes, l’anxiété, la dépression et les troubles relationnels.</p>
+                            <p class="pro-specialite">Le Pontet</p>
+                            <p class="pro-adresse">Entrée A, 19 bis Avenue Guillaume de Fargis</p>
+                            <p class="pro-tel"><a href="tel:0625739691">06 25 73 96 91</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Lambert Céline</h3>
+							<p><strong> Spécialisation :</strong> Formée aux thérapies cognitivo‑comportementales (TCC), psychopédagogue </p>
+							<p><strong> Approche :</strong> TCC (travail sur pensées/comportements), psycho‑éducation, accompagnement des difficultés scolaires, des troubles attentionnels, de l’estime de soi et de l’anxiété chez enfants/ados.</p>
+                            <p class="pro-specialite">Pernes-les-Fontaines</p>
+                            <p class="pro-adresse">51 chem Petites Valletes</p>
+                            <p class="pro-tel"><a href="tel:0677078435">06 77 07 84 35</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+                            <h3>Jana Svecova</h3>
+							<h3>Michel Akrich</h3>
+                            <p><strong> Diplôme :</strong> Master 2 de psychologie</p>
+							<p><strong> Spécialisation :</strong> spécialisée en TCC, EMDR et hypnose ericksonienne.</p>
+							<p><strong> Approche :</strong> TCC (thérapies cognitivo‑comportementales), EMDR, hypnose ericksonienne, bilans psychologiques et neuropsychologiques, prise en charge anxiété, dépression, burn‑out, difficultés relationnelles.</p>
+                            <p class="pro-specialite">Avignon</p>
+                            <p class="pro-adresse">Centre Médipôle, 1139 chemin Lavarin</p>
+                            <p class="pro-tel"><a href="tel:0666108668">06 66 10 86 68</a></p>
+                        </div>
+                        <div class="pro-card highlighted">
+
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- fin accordion-list -->
+    </main>
+
+    <footer class="site-footer">
+        <p>HORIZON - ADIMAKER 2026 - Junia</p>
+		<div style="margin-top: 20px; text-align: center;">
+			<a href="mentions-legales.html" target="_blank" style="margin: 0 15px;">Mentions légales</a>
+			<a href="confidentialite.html" target="_blank" style="margin: 0 15px;">Politique de confidentialité</a>
+			<a href="sources.html" target="_blank" style="margin: 0 15px;">Sources</a>
+		</div>
+    </footer>
+
+    <script src="java.js"></script>
+    <script>
+        function toggleAccordion(trigger) {
+            const panel = trigger.nextElementSibling;
+            const isOpen = trigger.classList.contains('open');
+            document.querySelectorAll('.accordion-trigger.open').forEach(t => {
+                t.classList.remove('open');
+                t.nextElementSibling.classList.remove('open');
+            });
+            if (!isOpen) {
+                trigger.classList.add('open');
+                panel.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>

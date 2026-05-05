@@ -1,0 +1,280 @@
+/* PAGE QUI SOMMES-NOUS*/
+
+:root {
+    --primary-teal: #32B8C6;
+    --secondary-teal: #21808d;
+    --primary-dark: #13343B;
+    --bg-light: #FCFCF9;
+    --border-light: #E0E0E0;
+}
+
+* { box-sizing: border-box; }
+
+/* PAGE CONTAINER */
+.qui-container {
+    max-width: 1100px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+}
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-family: FKGroteskNeue, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    text-align: center;
+}
+
+/* INFO CARD = ASSOCIATION CARD STYLE */
+.info-card {
+    background: #FFFFFF;
+    border: 3px solid var(--primary-teal);
+    border-radius: 15px;
+    margin-bottom: 35px;
+    padding: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.info-card:hover {
+    box-shadow: 0 10px 30px rgba(50, 184, 198, 0.2);
+    transform: translateY(-5px);
+}
+
+/* CARD HEADER - TEAL BACKGROUND */
+.card-header {
+    background: var(--primary-teal);
+    padding: 20px 30px;
+    border-bottom: none;
+    text-align: center;
+}
+
+/* CARD TITLE - WHITE TEXT IN HEADER */
+.card-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* GRID LAYOUT FOR MIDDLE CARDS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 0;
+}
+
+/* CARD CONTENT */
+.card-content {
+    padding: 22px 28px;
+}
+
+/* CARD BODY */
+.card-body {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+.card-body p {
+    margin: 0 0 12px 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.card-body p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-highlight {
+    font-weight: 600;
+    color: var(--primary-teal) !important;
+    margin-top: 8px !important;
+    display: block;
+    padding-top: 4px;
+}
+
+/* COMPACT BODY (for grid cards) */
+.card-body-compact {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--primary-dark);
+    text-align: center;
+}
+
+.card-body-compact p {
+    margin: 0 0 10px 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.card-body-compact p:first-child {
+    margin-bottom: 12px;
+}
+
+.card-body-compact p:last-child {
+    margin-bottom: 0;
+}
+
+.card-body-compact strong {
+    font-weight: 700;
+    color: var(--secondary-teal);
+    display: block;
+    margin: 10px 0 8px 0;
+}
+
+/* COMPACT LIST - ASSOCIATIONS STYLE */
+.compact-list {
+    list-style: disc inside;
+    padding: 0;
+    margin: 6px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.compact-list li {
+    margin: 0;
+    font-size: 15px;
+    color: var(--primary-dark);
+    line-height: 1.5;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* FINAL CARD - SAME STYLE */
+.final-card {
+    background: #FFFFFF;
+    border: 3px solid var(--primary-teal);
+}
+
+.final-card .card-title {
+    color: #FFFFFF;
+}
+
+.final-card .card-body-compact p,
+.final-card .card-body-compact strong,
+.final-card .compact-list li {
+    color: var(--primary-dark);
+}
+
+.final-card .card-body-compact strong {
+    color: var(--secondary-teal);
+}
+/* ========== FOOTER ========== */
+.site-footer {
+    background: #13343B;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-content p {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-content p:first-child {
+    font-weight: 600;
+}
+/* REMOVE DECORATIONS */
+.card-decor-left,
+.card-decor-right,
+.card-decor-top,
+.card-decor-bottom,
+.card-decor-top-alt,
+.card-decor-bottom-alt,
+.header-accent {
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .qui-container {
+        margin-top: 80px;
+    }
+
+    .page-title {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .info-card {
+        margin-bottom: 40px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-body,
+    .card-body-compact {
+        font-size: 14px;
+    }
+
+    .compact-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qui-container {
+        padding: 0 12px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .card-header {
+        padding: 16px 20px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-body,
+    .card-body-compact {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .compact-list li {
+        font-size: 13px;
+    }
+
+    .cards-grid {
+        gap: 20px;
+    }
+
+    .info-card {
+        margin-bottom: 25px;
+    }
+}

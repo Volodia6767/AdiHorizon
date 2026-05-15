@@ -1,7 +1,8 @@
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 
-menuToggle.addEventListener('click', () => {
+menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     navMenu.classList.toggle('active');
 });
 
@@ -15,4 +16,10 @@ dropdowns.forEach(dropdown => {
             dropdown.classList.toggle('active');
         }
     });
+});
+
+document.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    dropdowns.forEach(d => d.classList.remove('active'));
+    menuToggle.textContent = '☰';
 });

@@ -21,5 +21,4 @@ dropdowns.forEach(dropdown => {
 document.addEventListener('click', () => {
     navMenu.classList.remove('active');
     dropdowns.forEach(d => d.classList.remove('active'));
-    menuToggle.textContent = '☰';
 });

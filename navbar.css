@@ -1,8 +1,6 @@
 /* ============================================
    NAVBAR - NAVIGATION HEADER
    ============================================ */
-
-/* Header fixe en haut de page */
 header {
     background-color: #FFFFFF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -12,7 +10,6 @@ header {
     z-index: 1000;
 }
 
-/* Container de la navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,7 +19,6 @@ header {
     height: 80px;
 }
 
-/* ========== LOGO ========== */
 .logo-space {
     width: 80px;
     height: 80px;
@@ -33,7 +29,7 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    flex-shrink: 0; /* Empêche le logo de rétrécir */
+    flex-shrink: 0;
 }
 
 .logo-space img {
@@ -42,7 +38,6 @@ header {
     object-fit: cover;
 }
 
-/* ========== MENU BURGER (mobile) ========== */
 .menu-toggle {
     display: none;
     background: none;
@@ -52,7 +47,6 @@ header {
     cursor: pointer;
 }
 
-/* ========== NAVIGATION MENU ========== */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -64,10 +58,9 @@ header {
     border-bottom: 1px solid #E0E0E0;
 }
 
-/* ========== ITEMS DE NAVIGATION ========== */
 .nav-item {
     position: relative;
-    height: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +83,6 @@ header {
     position: relative;
 }
 
-/* Effet de soulignement au survol */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -102,18 +94,11 @@ header {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover {
-    color: #32B8C6;
-}
+.nav-link:hover { color: #32B8C6; }
+.nav-link:hover::after { width: 100%; }
 
-.nav-link:hover::after {
-    width: 100%;
-}
-
-/* ========== DROPDOWN MENU ========== */
-.dropdown {
-    position: relative;
-}
+/* ── DROPDOWN DESKTOP ── */
+.dropdown { position: relative; }
 
 .dropdown-menu {
     display: none;
@@ -122,17 +107,14 @@ header {
     left: 0;
     background-color: #FFFFFF;
     min-width: 220px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     padding: 12px 0;
     border-top: 3px solid #32B8C6;
-    margin-top: -3px;
     border-radius: 0 0 8px 8px;
     z-index: 1001;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
+.dropdown:hover .dropdown-menu { display: block; }
 
 .dropdown-item {
     display: block;
@@ -144,13 +126,14 @@ header {
 }
 
 .dropdown-item:hover {
-    background-color: #FCFCF9;
+    background-color: #f0fafb;
     color: #32B8C6;
     padding-left: 24px;
 }
 
-/* ========== RESPONSIVE (MOBILE) ========== */
+/* ── MOBILE (< 768px) ── */
 @media (max-width: 768px) {
+
     .menu-toggle {
         display: block;
     }
@@ -163,11 +146,11 @@ header {
 
     .nav-menu {
         display: none;
-        position: static !important;
+        position: static;
         flex-direction: column;
         width: 100%;
         background-color: #FFFFFF;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         border-bottom: none;
         margin: 0;
         padding: 0;
@@ -180,6 +163,7 @@ header {
     .nav-item {
         width: 100%;
         height: auto;
+        flex: none;
         border-bottom: 1px solid #E0E0E0;
         justify-content: flex-start;
     }
@@ -188,22 +172,28 @@ header {
         width: 100%;
         padding: 16px 20px;
         justify-content: flex-start;
+        height: auto;
+    }
+
+    /* Désactiver le hover sur mobile */
+    .dropdown:hover .dropdown-menu {
+        display: none;
     }
 
     .dropdown-menu {
-        position: static !important;
-        display: none !important;
+        position: static;
+        display: none;
         box-shadow: none;
         background-color: #f0fafb;
         border-top: none;
+        border-radius: 0;
         padding-left: 20px;
+        min-width: unset;
+        width: 100%;
     }
 
+    /* Ouverture par clic via JS */
     .dropdown.active .dropdown-menu {
-        display: block !important;
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: none !important;
+        display: block;
     }
 }

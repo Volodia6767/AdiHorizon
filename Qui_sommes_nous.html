@@ -167,6 +167,36 @@
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
         if (menuToggle) menuToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+
+
+    // ── HAMBURGER : ouvrir/fermer le menu ──
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu    = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', function () {
+        const isOpen = navMenu.classList.toggle('open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // ── DROPDOWN "Professionnels" sur mobile ──
+    const dropdownPros   = document.getElementById('dropdownPros');
+    const dropdownToggle = document.getElementById('dropdownToggle');
+
+    dropdownToggle.addEventListener('click', function (e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownPros.classList.toggle('open');
+        }
+    });
+
+    // ── Fermer le menu si on clique en dehors ──
+    document.addEventListener('click', function (e) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('open');
+            menuToggle.textContent = '☰';
+        }
+    });
+
     </script>
 </body>
 </html>

@@ -1821,9 +1821,20 @@ main {
         width: 100% !important;
     }
 
-    .nav-item.dropdown.open .dropdown-menu {
+.nav-item.dropdown.open > .dropdown-menu {
+    display: block !important;
+}
+
+/* Bloquer le hover sur mobile */
+@media (max-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: none !important;
+    }
+
+    .nav-item.dropdown.open > .dropdown-menu {
         display: block !important;
     }
+}
 
     .dropdown-item {
         padding: 12px 20px 12px 36px !important;

@@ -198,3 +198,23 @@ header {
         display: block; /* Active par clic sur mobile */
     }
 }
+
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static !important;
+        display: none;
+        box-shadow: none;
+        background-color: #f0fafb;
+        border-top: none;
+        padding-left: 20px;
+        z-index: 9999;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block !important;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none !important;
+    }
+}

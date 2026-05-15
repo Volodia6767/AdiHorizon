@@ -1747,3 +1747,37 @@ main {
     .pros-grid { grid-template-columns: 1fr; }
 }
 
+/* Téléphone (écrans < 600px) */
+@media (max-width: 600px) {
+
+    /* Les images passent en colonne et se réduisent */
+    .images-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        overflow-y: auto !important;
+    }
+
+    .image-card {
+        width: 85vw !important;
+        min-width: unset !important;
+        max-width: unset !important;
+        height: 160px !important;
+        min-height: unset !important;
+        max-height: unset !important;
+        clip-path: none !important; /* Supprime la forme en parallélogramme */
+    }
+
+    /* Héro plus grand pour contenir les images en colonne */
+    .hero {
+        height: auto !important;
+        padding-bottom: 20px !important;
+    }
+
+    /* Titre plus petit */
+    .main-title {
+        font-size: 2rem !important;
+        letter-spacing: 4px !important;
+    }
+}
+
